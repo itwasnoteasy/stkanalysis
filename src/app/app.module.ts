@@ -1,18 +1,23 @@
+import { AlphavantageService } from './service/alphavantage.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { CciComponent } from './components/cci/cci.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CciComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AlphavantageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
