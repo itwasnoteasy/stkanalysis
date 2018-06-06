@@ -14,4 +14,12 @@ export const WEEKLY_INTERVAL = 'weekly';
 export const MONTHLY_INTERVAL = 'monthly';
 export const TEN_TP = 10;
 export const TWENTY_TP = 20;
+export const CCI_DATA_KEY = 'Technical Analysis: CCI';
+export const NO_CRS_OVER = 0;
+export const MID_UP = 1;
+export const BTM_UP = 2;
+export const TOP_DN = 3;
+export const MID_DN = 4;
+export const BTM_DN = 5;
+export const TOP_UP = 6;
 

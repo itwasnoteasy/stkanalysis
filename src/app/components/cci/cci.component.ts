@@ -8,13 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CciComponent implements OnInit {
 
+  crossOvers: any;
   constructor(private avService: AlphavantageService) { }
 
   ngOnInit() {
   }
 
-  getDailyCCI() {
-    this.avService.getDailyCCI('MSFT');
+   getDailyCCI() {
+     this.avService.getCrossOversForTicker('MSFT').then((data: any) => {
+      this.crossOvers =  data;
+    });
   }
+
+
 
 }
